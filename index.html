@@ -2,13 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Ejan Shakya Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejan Shakya's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.prod.js"></script>
 </head>
 <body>
-  <div id="app"></div>
-  <script type="module" src="app.vue.js"></script>
+  <div id="app">
+    <header>
+      <h1>Ejan Shakya</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Professional Experience</h2>
+        <experience-timeline :experience="experience"></experience-timeline>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <project-cards :projects="projects"></project-cards>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <skills-list :skills="skills"></skills-list>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <education-list :education="education"></education-list>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="scripts/app.js"></script>
 </body>
 </html>
