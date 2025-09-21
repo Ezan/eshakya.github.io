@@ -1,0 +1,26 @@
+$primary-color: #2c3e50;
+$accent-color: #3498db;
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: $accent-color;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
